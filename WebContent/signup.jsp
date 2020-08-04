@@ -14,15 +14,15 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
-<title>핫죠지 팬 가입</title>
+<title>회원 가입</title>
 <link href="./Resource2/css/all.css" rel="stylesheet">
 <link href="./Resource2/css/signup.css" rel="stylesheet">
 </head>
 <body>
 <div class="signup-form">
     <form action="signin.jsp" method="post">
-		<h2>팬 가입</h2>
-		<p>여기서 팬 가입해!</p>
+		<h2>회원 가입</h2>
+		<p>여기서 가입해!</p>
 		<hr>
         <div class="form-group">
 			<div class="input-group">
@@ -31,7 +31,7 @@
 						<span class="fa fa-user"></span>
 					</span>                    
 				</div>
-				<input type="text" class="form-control" name="username" placeholder="팬 이름" required="required">
+				<input type="text" class="form-control" name="username" placeholder="수강생 이름" required="required">
 			</div>
         </div>
         <div class="form-group">
@@ -66,10 +66,10 @@
 			</div>
         </div>
         <div class="form-group">
-			<label class="form-check-label"><input type="checkbox" required="required"><a> 개인정보 제공에 동의해.</a></label>
+			<label class="form-check-label"><input type="checkbox" required="required"><a>개인정보 제공에 동의해.</a></label>
 		</div>
 		<div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">팬 가입</button>
+            <button type="submit" class="btn btn-primary btn-lg">회원 가입</button>
         </div>
     </form>
 	<div class="text-center">준비됐어? <a href="signin.jsp">로그인하러 가자</a></div>

@@ -14,7 +14,7 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
-<title>핫죠지 팬 로그인</title>
+<title>301호 에타 로그인</title>
 <link href="./Resource2/css/all.css" rel="stylesheet">
 <link href="./Resource2/css/signin.css" rel="stylesheet">
 </head>
@@ -24,7 +24,7 @@
 		<div class="avatar">
 			<img src="./Resource/img/avatar.jpg" alt="Avatar">
 		</div>
-        <h2 class="text-center">팬 가입</h2>   
+        <h2 class="text-center">회원 로그인</h2>   
         <div class="form-group">
         	<input type="text" class="form-control" name="username" placeholder="팬 이름" required="required">
         </div>
