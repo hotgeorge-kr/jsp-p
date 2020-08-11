@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My SNS</title>
+<title>301호 에브리타임</title>
 <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
@@ -20,30 +20,28 @@
 	});
 
 	function newuser() {
-		window
-				.open(
+		window.open(
 						"new_user.jsp",
 						"newuser",
-						"titlebar=no,location=no,scrollbars=no,resizeable=no,menubar=no,toolbar=no,width=300,height=240");
+						"titlebar=no,location=no,scrollbars=no,resizeable=no,menubar=no,toolbar=no,width=500,height=555");
 	}
 </script>
 
-<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body>
 	<header>
 		<div class="container1">
-			<h1 class="fontface" id="title">My Simple SNS</h1>
+			<h1 class="fontface" id="title">301호 에브리타임</h1>
 		</div>
 	</header>
 
 	<nav>
 		<div class="menu">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="javascript:newuser()">New User</a></li>
-				<li><a href="sns_control.jsp?action=getall">전체글보기</a>
+				<li><a href="#">홈</a></li>
+				<li><a href="javascript:newuser()">회원가입</a></li>
+				<li><a href="sns_control.jsp?action=getall">전체 글 보기</a>
 				<li><sns:login /></li>
 			</ul>
 		</div>
@@ -52,7 +50,7 @@
 	<div id="wrapper">
 		<section id="main">
 			<section id="content">
-				<b>내소식 업데이트</b>
+				<b>내 소식 업데이트</b>
 				<form class="m_form" method="post" action="sns_control.jsp?action=newmsg">
 					<input type="hidden" name="uid" value="${uid}">
 					<sns:write type="msg"/>
@@ -60,7 +58,7 @@
 				</form>
 				<br>
 				<br>
-				<h3>친구들의 최신 소식</h3>
+				<h3>수강생들의 최신 소식</h3>
 				<div id="accordion">
 					<c:forEach varStatus="mcnt" var="msgs" items="${datas}">
 					<c:set var="m" value="${msgs.message}"/>
@@ -91,74 +89,23 @@
 			</section>
 			<aside id="sidebar2">
 				<!-- sidebar2 -->
-				<h2>새로운 친구들.!!</h2>
+				<h2>가입한 수강생들</h2>
 				<c:forEach items="${nusers}" var="n">
 					<ul>
-						<li><a href="sns_control.jsp?action=getall&suid=${n}">${n}</a></li>
+						<li><a href="sns_control.jsp?action=getall&sname=${n}">${n}</a></li>
 					</ul>
 				</c:forEach>
 
-				<br> <br>
-				<h3>We're Social Too!!</h3>
-				<img src="img/facebook_32.png"> <img src="img/twitter_32.png">
-				<img src="img/youtube_32.png"> <br> <br>
-				<br> <br>
-
 				<h3>Links</h3>
 				<ul>
-					<li><a href="#">한빛미디어</a></li>
-					<li><a href="#">가천대학교</a></li>
-					<li><a href="#">가천대학교 길병원</a></li>
+					<li><a href="#">핫죠지 블로그</a></li>
+					<li><a href="#">핫죠지 깃허브</a></li>
+					<li><a href="#">핫죠지 인스타그램</a></li>
 				</ul>
 
 			</aside>
 			<!-- end of sidebar -->
 		</section>
 	</div>
-
-	<footer>
-		<div class="container1">
-			<section id="footer-area">
-
-			<section id="footer-outer-block">
-					<aside class="footer-segment">
-							<h4>About</h4>
-								<ul>
-									<li><a href="#">About My Simple SNS</a></li>
-									<li><a href="#">Copyright</a></li>
-									<li><a href="#">Author</a></li>
-								</ul>
-					</aside><!-- end of #first footer segment -->
-
-					<aside class="footer-segment">
-							<h4>Java Web Programming</h4>
-								<ul>
-									<li><a href="#">Book Information</a></li>
-									<li><a href="#">Table of contents</a></li>
-									<li><a href="#">Book History</a></li>
-								</ul>
-					</aside><!-- end of #second footer segment -->
-
-					<aside class="footer-segment">
-							<h4>Contact Us</h4>
-								<ul>
-									<li><a href="#">Book Support</a></li>
-									<li><a href="#">Publication</a></li>
-									<li><a href="#">Investor Relations</a></li>
-									</ul>
-					</aside><!-- end of #third footer segment -->
-					
-					<aside class="footer-segment">
-							<h4>Hee Joung Hwang</h4>
-								<p>&copy; 2014 <a href="#">dinfree.com</a> </p>
-					</aside><!-- end of #fourth footer segment -->
-
-				</section>
-				<!-- end of footer-outer-block -->
-
-			</section>
-			<!-- end of footer-area -->
-		</div>
-	</footer>
 </body>
 </html>

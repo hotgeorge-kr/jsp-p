@@ -1,24 +1,21 @@
 package mysns.sns;
 
-
 /**
- * File : Reply.java
- * Desc : 답글 Data Object 클래스
- * @author 황희정(dinfree@dinfree.com)
+ * File : Reply.java Desc : 답글 Data Object 클래스
  */
 public class Reply {
 	// 원본글 id
 	private int mid;
-	
+
 	// 답글 시퀀스 id
 	private int rid;
-	
+
 	// 답글 작성자
 	private String uid;
-	
+
 	// 답글 내용
 	private String rmsg;
-	
+
 	// 답글 작성일자
 	private String date;
 
@@ -61,7 +58,5 @@ public class Reply {
 	public void setRmsg(String rmsg) {
 		this.rmsg = rmsg;
 	}
-	
-	
-	
+
 }

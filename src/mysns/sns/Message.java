@@ -1,30 +1,28 @@
 package mysns.sns;
 
 /**
- * File : Message.java
- * Desc : SNS 게시글 Data Object 클래스
- * @author 황희정(dinfree@dinfree.com)
+ * File : Message.java // Desc : SNS 게시글 Data Object 클래스
  *
  */
 public class Message {
 	// 게시글 시퀀스 id
 	private int mid;
-	
+
 	// 게시글 작성자
 	private String uid;
-	
+
 	// 게시글 내용
 	private String msg;
-	
+
 	// 게시글 작성일, 시간
 	private String date;
-	
+
 	// 좋아요 회수
 	private int favcount;
-	
+
 	// 댓글 갯수
 	private int replycount;
-	
+
 	public int getMid() {
 		return mid;
 	}
@@ -72,5 +70,5 @@ public class Message {
 	public void setUid(String uid) {
 		this.uid = uid;
 	}
-	
+
 }
